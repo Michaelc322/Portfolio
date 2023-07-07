@@ -20,10 +20,10 @@
                 <span class="bar"></span>
             </div>
             <ul class = "nav-menu" [class.menuClass]="menuVariable">
-                <li><a href="#home" class="nav-links">Home</a></li>
-                <li><a href="#about" class="nav-links">About</a></li>
-                <li><a href="#work" class="nav-links">Work</a></li>
-                <li><a href="#contact" class="nav-links nav-links-btn">Contact</a></li>
+                <li><a href="#home" class="nav-links" (click)="openMenu()">Home</a></li>
+                <li><a href="#about" class="nav-links" (click)="openMenu()">About</a></li>
+                <li><a href="#work" class="nav-links" (click)="openMenu()">Work</a></li>
+                <li><a href="#contact" class="nav-links nav-links-btn" (click)="openMenu()">Contact</a></li>
             </ul>
         </nav>
     </div>
