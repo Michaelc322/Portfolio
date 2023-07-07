@@ -118,7 +118,7 @@ overflow: hidden;}
 }
 
 .homeText{
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     max-width: 35rem;
@@ -126,6 +126,8 @@ overflow: hidden;}
 }
 
 .homeText h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     line-height: 1.2;
     font-size: 3rem;
     margin-top: 2rem;
@@ -138,16 +140,6 @@ overflow: hidden;}
     line-height: 1.6;
 }
 
-/*.homeImg{
-    background-image: url(../../assets/HeadshotID.PNG);
-    background-size: cover;
-    height: 22rem;
-    width: 22rem;
-    position: relative;
-    border-radius: 50%;
-    box-shadow: 4px 4px 0.3rem 0.1rem #000000;
-}
-*/
 
 .imageBorder{
     position:relative;
