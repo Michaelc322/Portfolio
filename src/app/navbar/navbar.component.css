@@ -105,7 +105,7 @@ overflow: hidden;}
     height: 30rem;
     width: 36rem;
     object-fit: cover;
-    object-position: 100% 0%;
+    object-position: top;
 }
 
 .container-work{
@@ -151,7 +151,7 @@ overflow: hidden;}
     position:relative;
     height: 22rem;
     width: 22rem;
-    background: #000000;
+    background: #181818;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -184,7 +184,7 @@ overflow: hidden;}
     position:absolute;
     inset: 20px;
 
-    box-shadow: 0 0 0.3rem 0.3rem #000000 ;
+    box-shadow: 0 0 0.3rem 0.3rem #1a1a1a ;
     z-index: 3;
     border-radius: 50%;
     overflow: hidden;
@@ -502,16 +502,18 @@ overflow: hidden;}
         padding-bottom: 1rem;
     }
 }
+
 @media screen and (max-width: 1030px){
     .about {
         height: auto;
         padding: 8rem 0;
     }
+
     .aboutImg{
-        height: 100%;
-        width: 100%;
-        
+        position: relative;
     }
+
+
     .contentAbout{
         display: flex;
         flex-direction: column;
@@ -527,3 +529,9 @@ overflow: hidden;}
     }
 }
 
+@media screen and (max-width: 680px){
+    .img-main{
+        height: auto;
+        width: 95%;
+    }
+}
