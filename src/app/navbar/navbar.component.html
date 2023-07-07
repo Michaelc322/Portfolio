@@ -14,12 +14,12 @@
     <div class="nav-container">
         <nav class="navbar">
             <h1 id="navbar-logo">MICHAEL.DEV</h1>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="mobile-menu" [class.menu-toggle-Class]="menuIconVariable" (click)="openMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class = "nav-menu">
+            <ul class = "nav-menu" [class.menuClass]="menuVariable">
                 <li><a href="#home" class="nav-links">Home</a></li>
                 <li><a href="#about" class="nav-links">About</a></li>
                 <li><a href="#work" class="nav-links">Work</a></li>

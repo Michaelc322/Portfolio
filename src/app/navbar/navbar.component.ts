@@ -13,6 +13,17 @@ import { Component, Host, HostListener, OnInit } from '@angular/core';
 
 
 export class NavbarComponent {
+  title = 'navbar';
+  constructor(){
 
+  }
+
+  menuVariable:boolean = false;
+  menuIconVariable:boolean = false;
+
+  openMenu(){
+    this.menuVariable =! this.menuVariable;
+    this.menuIconVariable =! this.menuIconVariable;
+  }
 }
 

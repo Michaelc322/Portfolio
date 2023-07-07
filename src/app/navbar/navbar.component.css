@@ -76,6 +76,8 @@ overflow: hidden;}
     color: rgb(255, 100, 100);
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 
 }
 .aboutText h2 {
@@ -83,6 +85,8 @@ overflow: hidden;}
     margin-bottom: 2rem;
     line-height: 1.4;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 
 }
 
@@ -126,18 +130,20 @@ overflow: hidden;}
 }
 
 .homeText h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
     line-height: 1.2;
     font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 .homeText p{
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.6;
+    color: #dadada
 }
 
 
@@ -302,8 +308,8 @@ overflow: hidden;}
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
     background: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .skills {
@@ -351,7 +357,7 @@ overflow: hidden;}
 
 @media screen and (max-width: 768px) {
     .nav-container{
-        position: relative;
+        position: fixed;
 
     }
 
@@ -364,7 +370,7 @@ overflow: hidden;}
         position: absolute;
         top: 80px;
         left: 100%;
-        opacity: 1;
+        opacity: 0;
         transition: all 0.5s ease;
     }
 
@@ -420,11 +426,34 @@ overflow: hidden;}
         position: absolute;
         top: 20%;
         right: 5%;
-        transform: translate(5%, 20%)
+        transform: translate(5%, 20%);
+    }
+    
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;   
     }
 
+    .menuClass{
+        left: 0%;
+        opacity: 1;
+    }
+
+    .menu-toggle-Class .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .menu-toggle-Class .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    .menu-toggle-Class .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
 
 }
+
 @media screen and (max-width: 1180px){
     .home-main{
         gap: 0rem;
@@ -478,9 +507,15 @@ overflow: hidden;}
         height: auto;
         padding: 8rem 0;
     }
-
+    .aboutImg{
+        height: 100%;
+        width: 100%;
+        
+    }
     .contentAbout{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
         text-align: center;
     }
     .aboutText{
