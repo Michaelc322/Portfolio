@@ -364,13 +364,14 @@ overflow: hidden;}
     .nav-menu{
         display:grid;
         grid-template-columns: auto;
-        background: rgb(255, 100, 100);
+        background: #212329;
         margin: 0;
         width: 100%;
+
         position: absolute;
         top: 80px;
         left: 100%;
-        opacity: 0;
+        opacity: 1;
         transition: all 0.5s ease;
     }
 
