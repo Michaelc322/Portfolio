@@ -109,6 +109,54 @@ overflow: hidden;}
     object-position: top;
 }
 
+.attachments{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.attachments a {
+    text-decoration: none;
+
+}
+
+.resume{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    color: white;
+}
+.resume i{
+    /* color: white; */
+    font-family: "Font Awesome 6 Free";
+    font-size: 1.3rem;
+}
+.resume p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resume:after{
+    content: "";
+    position: absolute;
+    background-color: #ff6f6f;
+    height: 3px;
+    width:0%;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.resume:hover:after{
+    width:100%;
+}
+
+
+
 .work{
     background-color: #212329;
     padding: 8rem 0;
@@ -155,17 +203,30 @@ overflow: hidden;}
 .projectsGrid .proj{
     background-color: #2A2C33;
     border-radius: 1.7rem;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
     display: flex;
 }
 
 .projectsGrid .projImg{
     background-color: hsla(0, 0%, 46%, 0.2);
     border-radius: 1.7rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
     height: auto;
     overflow: hidden;
     width:30rem;
+}
+
+.projImg .projImgMain{
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: cover;
+    transition: ease-in-out 6s;
+}
+
+.projImg .projImgMain:hover{
+    object-position: bottom;
+    transition: ease-in-out 6s;
 }
 
 .projectsGrid .projText {
@@ -325,6 +386,25 @@ overflow: hidden;}
     font-weight: bold;
     letter-spacing: 2px;
     color:white
+}
+
+.socials i{
+
+    color: #ff6f6f;
+    font-size: 1.8rem;
+    font-family: "Font Awesome 6 Brands";
+}
+
+.socials i:hover{
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.socials{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.3rem;
+    
 }
 
 
