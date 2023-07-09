@@ -49,7 +49,7 @@ overflow: hidden;}
     position: relative;
 }
 .about{
-    background-color: #2D3038;
+    background-color: #2A2C33;
     padding: 8rem 0;
 
 
@@ -109,15 +109,123 @@ overflow: hidden;}
     object-position: top;
 }
 
-.container-work{
+.work{
     background-color: #212329;
-    top:0px;
-    height: 750px;
+    padding: 8rem 0;
+}
+.container-work{
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 0 4rem;
+}
+
+.contentWork{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentWork h3{
+    color: #ff6f6f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    
+}
+.contentWork h2 {
+    color: white;
+    margin-bottom: 6rem;
+}
+
+.projectsGrid{
+    grid-gap: 5rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    width: 100%;
+}
+
+.projectsGrid .proj1{
+    flex-direction: row;
+    gap: 6rem;
+    height: 28rem;
+    padding: 1.5rem;
+}
+
+.projectsGrid .proj{
+    background-color: #2A2C33;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.projectsGrid .projImg{
+    background-color: hsla(0, 0%, 46%, 0.2);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: auto;
+    overflow: hidden;
+    width:30rem;
+}
+
+.projectsGrid .projText {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+}
+
+.projectsGrid .projText h3 {
+    color: white;
+    margin-bottom: 2rem;
     position: relative;
+    text-transform: uppercase;
+}
+
+.projectsGrid .projText p {
+    color: white;
+    text-align: center;
+    text-transform: none;
+}
+.stack {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.stack p {
+    background-color: #2A2C33;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    color: white;
+    padding: .5rem 1rem;
+}
+
+.links{
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+}
+
+.links a{
+    color: white;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.links .brand i{
+    font-family: "Font Awesome 6 Brands"
+}
+.links .free i {
+    font-family: "Font Awesome 6 Free"
 }
 
 .contact{
-    background-color: #2D3038;
+    background-color: #2A2C33;
     padding: 11rem 0;
     
 }
