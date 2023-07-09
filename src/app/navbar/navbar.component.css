@@ -49,11 +49,12 @@ overflow: hidden;}
     position: relative;
 }
 .about{
-    background-color: #36383b;
-    padding: 15rem 0;
+    background-color: #2D3038;
+    padding: 8rem 0;
 
 
 }
+
 .container-about{
     max-width: 107rem;
     margin: 0 auto;
@@ -68,7 +69,7 @@ overflow: hidden;}
 
 .aboutText{
     padding-right: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 0rem;
 
 }
 .aboutText h1 {
@@ -82,11 +83,11 @@ overflow: hidden;}
 }
 .aboutText h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.4;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 
 }
 
@@ -114,12 +115,76 @@ overflow: hidden;}
     height: 750px;
     position: relative;
 }
-.container-contact{
-    background-color: #36383b;
-    top:0px;
-    height: 800px;
-    position: relative;
+
+.contact{
+    background-color: #2D3038;
+    padding: 11rem 0;
+    
 }
+.container-contact{
+    margin: 0 auto;
+    padding: 0 25rem;
+    max-width: 107rem;
+
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 11rem;
+}
+
+.contactText1{
+    color:rgb(255, 100, 100);
+}
+
+.contactTitles{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 20rem;
+
+}
+
+.contactTitles h2{
+    color: white;
+    font-family: 'Poppins', sans;
+    font-weight: 400;
+}
+
+.contactIcons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 5rem;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.contactBox{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.contactInfo h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.contactBox i {
+    color: white;
+    font-size: 2.7rem;
+    font-family: "Font Awesome 6 Free";
+}
+
+
 
 .homeText{
     color: rgb(255, 255, 255);
@@ -129,12 +194,14 @@ overflow: hidden;}
     position:relative;
 }
 
+
+
 .homeText h1{
     line-height: 1.2;
     font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #ffffff;
 }
@@ -144,6 +211,12 @@ overflow: hidden;}
     font-weight: 500;
     line-height: 1.6;
     color: #dadada
+}
+
+.homeText p span {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:white
 }
 
 
@@ -355,6 +428,40 @@ overflow: hidden;}
 }
 
 
+footer {
+    background-color: #2d2e32;
+    padding: 5rem 0;
+    width: 100%;
+
+}
+
+footer h3 {
+    color: white;
+    font-size: 1rem;
+}
+
+.footersocials{
+    display: flex;
+    gap:2rem;
+}
+.footersocials i {
+    color: white;
+    font-size: 2.3rem;
+    font-family: "Font Awesome 6 Brands";
+}
+
+.container-footer {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.footer-content{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 768px) {
     .nav-container{
         position: fixed;
@@ -365,9 +472,9 @@ overflow: hidden;}
         display:grid;
         grid-template-columns: auto;
         background: #212329;
-        margin: 0;
+        margin-top: 0;
         width: 100%;
-
+        height: 100vh;
         position: absolute;
         top: 80px;
         left: 100%;
@@ -389,18 +496,15 @@ overflow: hidden;}
     }
 
     .nav-links{
+        margin-top:2rem;
         text-align: center;
         line-height: 60px;
         width: 100%;
         display: table;
+        font-size: 1.5rem;
 
     }
 
-    .nav-links:hover{
-        background-color: rgb(255, 100, 100);
-        color: white;
-        transition: all 0.3s ease-out;
-    }
     .navbar{
         width: 100%;
 
@@ -409,19 +513,12 @@ overflow: hidden;}
         border: none;
         padding: 0;
         border-radius: 0;
+        margin-bottom: 2rem;
         background-color: #212329;
         color: white;
         transition: all 0.4s ease-out;
     }
 
-    .nav-links-btn:hover{
-        border: none;
-        padding: 0;
-        border-radius: 0;
-        background-color: rgb(255, 100, 100);
-        color: white;
-        transition: all 0.4s ease-out;
-    }
 
     #mobile-menu {
         position: absolute;
@@ -459,6 +556,75 @@ overflow: hidden;}
     .home-main{
         gap: 0rem;
     }
+
+    .contact{
+        padding: 8rem 0;
+
+
+    }
+
+    .container-contact{
+        margin: 0 auto;
+        padding: 0 4rem;
+        max-width: 107rem;
+    
+    }
+    
+    .contact-content{
+        padding-left: 0rem;
+    }
+
+    .contactText1{
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contactTitles{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 20rem;
+    
+    }
+    
+    .contactTitles h2{
+        color: white;
+        font-family: 'Poppins', sans;
+        font-weight: 400;
+    }
+    
+    .contactIcons{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+        gap: 5rem;
+        text-align: center;
+    }
+    
+    .contactInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+    
+    .contactBox{
+        flex-direction: column;
+    }
+    
+    .contactInfo h2{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+    .contactBox i {
+        color: white;
+        font-size: 2.7rem;
+        font-family: "Font Awesome 6 Free";
+    }
+
+
 }
 @media screen and (max-width: 1000px){
     .home{
@@ -534,5 +700,16 @@ overflow: hidden;}
     .img-main{
         height: auto;
         width: 95%;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footersocials{
+        margin-top: 2rem;
     }
 }
