@@ -69,7 +69,7 @@ overflow: hidden;}
 
 .aboutText{
     padding-right: 1rem;
-    padding-left: 0rem;
+    padding-left: 5rem;
 
 }
 .aboutText h1 {
@@ -856,6 +856,20 @@ footer h3 {
         padding-right: 0;
         padding-bottom: 1rem;
     }
+
+    .socials{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3rem;
+        
+    }
+
+    .aboutText{
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 1030px){
@@ -881,6 +895,18 @@ footer h3 {
     }
     .img-main {
         margin-bottom: 3.5rem;
+    }
+
+    .attachments{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectsGrid .proj {
+        flex-direction: column;
+        height: 70rem;
+        width: fit-content
+
     }
 }
 
