@@ -582,6 +582,14 @@ overflow: hidden;}
     display: flex;
 }
 
+/* .hstack{
+    align-items: center;
+    position: absolute;
+    bottom: 8rem;
+    left: 0;
+    display: flex;
+} */
+
 .skills p {
     border-right: 2px solid;
     color:#fff;
