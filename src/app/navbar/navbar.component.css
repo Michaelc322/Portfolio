@@ -221,12 +221,12 @@ overflow: hidden;}
     height: 100%;
     object-position: top;
     object-fit: cover;
-    transition: ease-in-out 6s;
+    transition: ease-in-out 4s;
 }
 
 .projImg .projImgMain:hover{
     object-position: bottom;
-    transition: ease-in-out 6s;
+    transition: ease-in-out 4s;
 }
 
 .projectsGrid .projText {
