@@ -5,7 +5,7 @@ overflow: hidden;}
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-container { 
@@ -52,8 +52,6 @@ overflow: hidden;}
     background-color: #2A2C33;
     padding: 8rem 0;
     height: 100%;
-
-
 }
 
 .container-about{
@@ -115,12 +113,10 @@ overflow: hidden;}
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
-    
 }
 
 .attachments a {
     text-decoration: none;
-
 }
 
 .resume{
