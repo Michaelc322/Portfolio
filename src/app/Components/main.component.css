@@ -996,4 +996,17 @@ footer h3 {
     .footersocials{
         margin-top: 2rem;
     }
+
+    .home-main{
+        width: 20rem;
+    }
+
+    .homeText{
+        width: 100%;
+    }
+
+    .shortAbout p {
+        width: 100%;
+        font-size: 0.94rem;
+    }
 }
