@@ -51,6 +51,7 @@ overflow: hidden;}
 .about{
     background-color: #2A2C33;
     padding: 8rem 0;
+    height: 100%;
 
 
 }
@@ -102,11 +103,12 @@ overflow: hidden;}
 }
 
 .img-main{
-    border-radius: 2.5rem;
+    border-radius: 10%;
     height: 30rem;
     width: 36rem;
     object-fit: cover;
     object-position: top;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 .attachments{
@@ -232,7 +234,7 @@ overflow: hidden;}
 .projectsGrid .projText {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     justify-content: center;
     text-align: center;
     width: 100%;
