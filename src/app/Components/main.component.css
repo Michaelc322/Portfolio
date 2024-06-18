@@ -133,7 +133,6 @@ overflow: hidden;}
     color: white;
 }
 .resume i{
-    /* color: white; */
     font-family: "Font Awesome 6 Free";
     font-size: 1.3rem;
 }
@@ -589,13 +588,7 @@ overflow: hidden;}
     display: flex;
 }
 
-/* .hstack{
-    align-items: center;
-    position: absolute;
-    bottom: 8rem;
-    left: 0;
-    display: flex;
-} */
+
 
 .skills p {
     border-right: 2px solid;
@@ -672,8 +665,8 @@ footer h3 {
 .typewriter h1 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
+    overflow: hidden; 
+    white-space: nowrap; 
     margin: 0 auto;
     animation: 
       typing 3.5s,
@@ -691,9 +684,9 @@ footer h3 {
     width: 28rem;
     color: #fff;
     font-family: 'Nunito', sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid #ff6f6f; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    overflow: hidden; 
+    border-right: .1em solid #ff6f6f;
+    white-space: nowrap; 
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .5s step-end infinite;
@@ -703,7 +696,7 @@ footer h3 {
     width: 28rem;
   }
   
-  /* The typewriter cursor effect */
+
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #ff6f6f }
@@ -934,9 +927,11 @@ footer h3 {
     .shortAbout{
         width: 100%;
 
-        p{
-            margin: 0 auto;
-        }
+
+    }
+
+    .shortAbout p {
+        margin: 0 auto;
     }
 
 
