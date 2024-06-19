@@ -1000,3 +1000,29 @@ footer h3 {
         font-size: 0.94rem;
     }
 }
+
+
+.linkedinButton{
+    background-color: #0e76a8;
+    color: white;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+
+}
+
+.linkedinButton:hover{
+    background-color: #ffffff;
+    color: #0e76a8;
+    padding: 0.1rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
