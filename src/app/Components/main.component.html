@@ -1,68 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://kit.fontawesome.com/b8e658d649.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href="main.component.css">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/b8e658d649.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.component.css" />
     <title>Michael Carroll</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-container">
-        <nav class="navbar">
-            <h1 id="navbar-logo">MICHAEL.DEV</h1>
-            <div class="menu-toggle" id="mobile-menu" [class.menu-toggle-Class]="menuIconVariable" (click)="openMenu()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class = "nav-menu" [class.menuClass]="menuVariable">
-                <li><a href="#home" class="nav-links" (click)="openMenu()">Home</a></li>
-                <li><a href="#about" class="nav-links" (click)="openMenu()">About</a></li>
-                <li><a href="#work" class="nav-links" (click)="openMenu()">Work</a></li>
-                <li><a href="#contact" class="nav-links nav-links-btn" (click)="openMenu()">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <h1 id="navbar-logo">MICHAEL.DEV</h1>
+        <div
+          class="menu-toggle"
+          id="mobile-menu"
+          [class.menu-toggle-Class]="menuIconVariable"
+          (click)="openMenu()"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu" [class.menuClass]="menuVariable">
+          <li>
+            <a href="#home" class="nav-links" (click)="openMenu()">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-links" (click)="openMenu()">About</a>
+          </li>
+          <li>
+            <a href="#work" class="nav-links" (click)="openMenu()">Work</a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="nav-links nav-links-btn"
+              (click)="openMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
     <section class="home" id="homeSec">
-        <div class="container-home" id = "home">
-            <div class="contentHome">
-                <div class="home-main">
-                    <div class="homeText">
-                        <div class="typewriter">
-                        <h1>Software Engineer</h1>
-                        </div>
-                        <p>Hi, I'm <span>Michael Carroll</span>, a Computer Science Undergraduate based in Orlando, Florida. </p>
-                        <br>
-                        <div class="shortAbout">
-                            <p>Currently attending <span>Florida State University</span></p>
-                        </div>
-                        <span class = "socials">
-                            <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/michael-carroll-b40020250/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-        
-                            <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/Michaelc322">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </span>
+      <div class="container-home" id="home">
+        <div class="contentHome">
+          <div class="home-main">
+            <div class="homeText">
+              <div class="typewriter">
+                <h1>Software Engineer</h1>
+              </div>
+              <p>
+                Hi, I'm <span>Michael Carroll</span>, a Computer Science
+                Undergraduate based in Orlando, Florida.
+              </p>
+              <br />
+              <div class="shortAbout">
+                <p>Currently attending <span>Florida State University</span></p>
+              </div>
+              <span class="socials">
+                <a
+                  aria-label="linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/michael-carroll-b40020250/"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
 
-                    </div>
+                <a
+                  aria-label="github"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Michaelc322"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </span>
+            </div>
 
-                    <div class="imageBorder">
-                        <div class="homeImg">
-                            <img src="../../assets/carphoto1.png">
-                            <h2>Michael Carroll</h2><br>
-                            <a href = "#contact">contact</a>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="imageBorder">
+              <div class="homeImg">
+                <img src="../../assets/carphoto1.png" />
+                <h2>Michael Carroll</h2>
+                <br />
+                <a href="#contact">contact</a>
+              </div>
+            </div>
+          </div>
 
-                <!-- <div class="skills">
+          <!-- <div class="skills">
                     <p>Tech Stack</p>
                     <div class="skill-logos">
                         <ul>
@@ -87,8 +123,8 @@
                         </ul>
                     </div>
                 </div> -->
-            </div>
-            <!-- <div class="hstack stack">
+        </div>
+        <!-- <div class="hstack stack">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>C++</p>
@@ -107,225 +143,373 @@
                 <p>jQuery</p>
                 <p>Thymeleaf</p>
             </div> -->
-        </div>
+      </div>
     </section>
-    <section id = "about" class = "about">
-        <div class="container-about">
-            <div class="contentAbout">
-                <div class="aboutImg">
-                    <img src="../../assets/carphoto2.png" class = "img-main">
+    <section id="about" class="about">
+      <div class="container-about">
+        <div class="contentAbout">
+          <div class="aboutImg">
+            <img src="../../assets/carphoto2.png" class="img-main" />
+          </div>
+          <div class="aboutText">
+            <h1>ABOUT ME</h1>
+            <h2>A Dedicated Software Developer</h2>
+            <p>
+              As a dedicated Computer Science major at Florida State University,
+              I am passionate about making change through technology. My
+              academic journey has equipped me with a solid foundation in
+              programming, algorithms, and software development, and I am eager
+              to apply these skills in a professional setting. I enjoy playing
+              pickleball and going to the gym in my free time.
+            </p>
+            <span class="attachments">
+              <a
+                target="_blank"
+                href="../../assets/MichaelCarrollResumeOnWebsite.pdf"
+                rel="noreferrer"
+              >
+                <div class="resume">
+                  <p>Resume</p>
+                  <i class="fa-solid fa-file"></i>
                 </div>
-                <div class="aboutText">
-                    <h1>ABOUT ME</h1>
-                    <h2>A Dedicated Software Developer</h2>
-                    <p>As a dedicated Computer Science major at Florida State University, I am passionate about making change through technology. 
-                        My academic journey has equipped me with a solid foundation in programming, algorithms, and software development, 
-                        and I am eager to apply these skills in a professional setting. I enjoy playing pickleball and going to the gym in my free time.
-                    </p>
-                    <span class = "attachments">
-                        
-                        <a target="_blank" href="../../assets/MichaelCarrollResume.pdf" rel="noreferrer">
-                            <div class="resume">
-                                <p>Resume</p>
-                                <i class="fa-solid fa-file"></i>
-                            </div>
-                        </a>
-                    </span>
-                </div>
-            </div>
+              </a>
+            </span>
+          </div>
         </div>
+      </div>
     </section>
-    <section id = "work" class = "work">
-        <div class="container-work">
-            <div class="contentWork">
-                <h3>Projects</h3>
-                <h2>NEW PROJECTS COMING SOON 🥳</h2>
-                <div class="projectsGrid">
-                    <div class="proj proj1">
-                        <div class="projImg">
-                            <a target="_blank" href="https://thepicklebot.vercel.app/" rel="noreferrer">
-                                <img class ="projImgMain" src="../../assets/thepicklebot.vercel.app_.png" alt="website">
-                            </a>
-                        </div>
-                        <div class="projText">
-                                <h3>PickleBOT</h3>
-                                <p>Used MongoDB, ExpressJS, React + Vite, and NodeJS to create an appealing full stack application with user authentication and security to protect documentation about pickleBOT on the web app. Used Puppeteer to create an automation bot that reserves Pickleball courts in Tallahassee for the FSU Pickleball club at a specific time on specific days.
-                                    </p>
-                                <div class="stack">
-                                    <p>Vite</p>
-                                    <p>React</p>
-                                    <p>ExpressJS</p>
-                                    <p>NodeJS</p>
-                                    <p>JWT</p>
-                                    <p>MongoDB</p>
+    <section id="work" class="work">
+      <div class="container-work">
+        <div class="contentWork">
+          <h3>Projects</h3>
+          <h2>NEW PROJECTS ALWAYS COMING SOON 🥳</h2>
+          <div class="projectsGrid">
+            <div class="proj proj1">
+              <div class="projImg">
+                <a
+                  target="_blank"
+                  href="https://thriftly.us/"
+                  rel="noreferrer"
+                >
+                  <img
+                    class="projImgMain"
+                    src="../../assets/thriftlywebpage.png"
+                    alt="website"
+                  />
+                </a>
+              </div>
+              <div class="projText">
+                <h3>Thriftly</h3>
+                <p>
+                  Used React Native, Expo Go, and Supabase to create a listing
+                  app for university students to shop their college marketplace. Focused primarily on creating an appealing design for user
+                  experience so that college students can list items and shop
+                  items from other students. Implemented real-time messaging
+                  and verification of school email addresses only which assign
+                  which community the user would be a part of.
+                </p>
+                <div class="stack">
+                  <p>React Native</p>
+                  <p>Expo</p>
+                  <p>Supabase</p>
+                  <p>Resend</p>
+                  <p>PostgreSQL</p>
 
-                                    <!-- <p>StyledComponents</p>
+                  <!-- <p>StyledComponents</p>
                                     <p>Puppeteer</p>
                                     <p>ExpressJS</p>
                                     <p>MongoDB</p> -->
-
-                                </div>
-                                <div class="links">
-                                    <a class ="brand" target="_blank" href="https://github.com/Michaelc322/pickleBOTfull" rel="noreferrer">Code 
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a class ="free" target="_blank" href="https://thepicklebot.vercel.app/" rel="noreferrer">Live Demo
-                                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
-                                    </a>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="proj proj1">
-                        <div class="projText">
-                                <h3>My Movie Sandbox</h3>
-                                    <p>Constructed an application that has user authentication using Spring Boot and Spring Security. Allows logged in users to search for movies, add movies, add actors to movies, and view all movies.
-                                        Perform basic CRUD actions with a PostgreSQL database using Java Database Connectivity.
-                                        Demonstrated proficiency in Thymeleaf, React, Spring Boot, and PostgreSQL.
-                                    </p>
-                                <div class="stack">
-                                    <p>React</p>
-                                    <p>Spring Boot</p>
-                                    <p>Thymeleaf</p>
-                                    <p>PostgreSQL</p>
-                                    <p>Spring Security</p>
-                                    <p>Typescript</p>
-                                </div>
-                                <div class="links">
-                                    <a class ="brand" target="_blank" href="https://github.com/Michaelc322/MyMovie-Sandbox-Project" rel="noreferrer">Code 
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                        </div>
-                        <div class="projImg">
-                            <a target="_blank" href="https://github.com/Michaelc322/MyMovie-Sandbox-Project" rel="noreferrer">
-                                <img class ="projImgMain" src="../../assets/mymoviesandbox.png" alt="website">
-                            </a>
-                        </div>
-                        
-                    </div>
-                    <div class="proj proj1">
-                        <div class="projImg">
-                            <a target="_blank" href="https://fsupickleball.vercel.app/" rel="noreferrer">
-                                <img class ="projImgMain" src="../../assets/fsupickle2.png" alt="website">
-                            </a>
-                        </div>
-                        <div class="projText">
-                                <h3>Florida State Pickleball</h3>
-                                    <p>Constructed a website for the Florida State University official Pickleball club sport
-                                        using React + Vite and basic HTML and CSS for an appealing design. I used the Google API to
-                                        retrieve upcoming calendar events for FSU Pickleball.
-                                    </p>
-                                <div class="stack">
-                                    <p>React</p>
-                                    <p>Vite</p>
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                </div>
-                                <div class="links">
-                                    <a class ="brand" target="_blank" href="https://github.com/Michaelc322/FSUPickleballWebapp" rel="noreferrer">Code 
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a class ="free" target="_blank" href="https://fsupickleball.vercel.app/" rel="noreferrer">Live Demo
-                                        <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
-                                    </a>
-                                </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="proj proj1">
-                        <div class="projText">
-                                <h3>Mike's Market</h3>
-                                    <p>Utilized C# and .NET MAUI to create an application that simulates an inventory management system on the backend and a shopping cart system for the client. Users can create a wish list and checkout with items. 
-                                        Implemented the ability to create products, specify tax rate, markdowns or BOGO deals, and update stock.
-                                        
-                                    </p>
-                                <div class="stack">
-                                    <p>C#</p>
-                                    <p>.NET MAUI</p>
-                                    <p>Visual Studio</p>
-                                    <p>Xaml</p>
-                                    <p>Filebase</p>
-                                </div>
-
-                                <div class="links">
-                                    <a class ="brand" target="_blank" href="https://github.com/Michaelc322/MikesMarket-Summer2024_Project-" rel="noreferrer">Code 
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a class ="brand" target="_blank" href="https://youtu.be/x1c7ysH09dM" rel="noreferrer">Demo 
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                </div>
-                        </div>
-                        <div class="projImg">
-                            <a target="_blank" href="https://github.com/Michaelc322/MikesMarket-Summer2024_Project-" rel="noreferrer">
-                                <img class ="projImgMain" src="../../assets/mikesmarket.png" alt="website">
-                            </a>
-                        </div>
-                        
-                    </div>
-                    
                 </div>
+                <div class="links">
+                  <a
+                    class="free"
+                    target="_blank"
+                    href="https://thriftly.us/"
+                    rel="noreferrer"
+                    >Web App
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square link-icon"
+                    ></i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-    <section id = "contact" class ="contact">
-        <div class="container-contact" id = "contact">
-            <div class="contact-content">
-                <div class="contactText1">
-                    <h3>
-                        CONTACT
-                    </h3>
-                </div>
 
-                <div class="contactIcons">
-                    <div class="contactBox">
-                        <span>
-                            <i class="fa-solid fa-envelope"></i>
-                        </span>
-                        <div class="contactInfo">
-                            <h2>Email</h2>
-                            <p>michaelc32204@gmail.com</p>
-                            <p>mc22f@fsu.edu</p>
-                        </div>
-                    </div>
-                    <div class="contactBox">
-                        <span>
-                            <i class="fa-solid fa-people-arrows"></i>
-                        </span>
-                        <div class="contactInfo">
-                            <h2>Connect with me!</h2>
-                            <a class="linkedinButton"aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/michaelcarroll-dev/">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
+            <div class="proj proj1">
+              <div class="projImg">
+                <a
+                  target="_blank"
+                  href="https://thepicklebot.vercel.app/"
+                  rel="noreferrer"
+                >
+                  <img
+                    class="projImgMain"
+                    src="../../assets/thepicklebot.vercel.app_.png"
+                    alt="website"
+                  />
+                </a>
+              </div>
+              <div class="projText">
+                <h3>PickleBOT</h3>
+                <p>
+                  Used MongoDB, ExpressJS, React + Vite, and NodeJS to create an
+                  appealing full stack application with user authentication and
+                  security to protect documentation about pickleBOT on the web
+                  app. Used Puppeteer to create an automation bot that reserves
+                  Pickleball courts in Tallahassee for the FSU Pickleball club
+                  at a specific time on specific days.
+                </p>
+                <div class="stack">
+                  <p>Vite</p>
+                  <p>React</p>
+                  <p>ExpressJS</p>
+                  <p>NodeJS</p>
+                  <p>JWT</p>
+                  <p>MongoDB</p>
+
+                  <!-- <p>StyledComponents</p>
+                                    <p>Puppeteer</p>
+                                    <p>ExpressJS</p>
+                                    <p>MongoDB</p> -->
                 </div>
+                <div class="links">
+                  <a
+                    class="brand"
+                    target="_blank"
+                    href="https://github.com/Michaelc322/pickleBOTfull"
+                    rel="noreferrer"
+                    >Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a
+                    class="free"
+                    target="_blank"
+                    href="https://thepicklebot.vercel.app/"
+                    rel="noreferrer"
+                    >Live Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square link-icon"
+                    ></i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+            <div class="proj proj1">
+              <div class="projText">
+                <h3>My Movie Sandbox</h3>
+                <p>
+                  Constructed an application that has user authentication using
+                  Spring Boot and Spring Security. Allows logged in users to
+                  search for movies, add movies, add actors to movies, and view
+                  all movies. Perform basic CRUD actions with a PostgreSQL
+                  database using Java Database Connectivity. Demonstrated
+                  proficiency in Thymeleaf, React, Spring Boot, and PostgreSQL.
+                </p>
+                <div class="stack">
+                  <p>React</p>
+                  <p>Spring Boot</p>
+                  <p>Thymeleaf</p>
+                  <p>PostgreSQL</p>
+                  <p>Spring Security</p>
+                  <p>Typescript</p>
+                </div>
+                <div class="links">
+                  <a
+                    class="brand"
+                    target="_blank"
+                    href="https://github.com/Michaelc322/MyMovie-Sandbox-Project"
+                    rel="noreferrer"
+                    >Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="projImg">
+                <a
+                  target="_blank"
+                  href="https://github.com/Michaelc322/MyMovie-Sandbox-Project"
+                  rel="noreferrer"
+                >
+                  <img
+                    class="projImgMain"
+                    src="../../assets/mymoviesandbox.png"
+                    alt="website"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="proj proj1">
+              <div class="projImg">
+                <a
+                  target="_blank"
+                  href="https://fsupickleball.vercel.app/"
+                  rel="noreferrer"
+                >
+                  <img
+                    class="projImgMain"
+                    src="../../assets/fsupickle2.png"
+                    alt="website"
+                  />
+                </a>
+              </div>
+              <div class="projText">
+                <h3>Florida State Pickleball</h3>
+                <p>
+                  Constructed a website for the Florida State University
+                  official Pickleball club sport using React + Vite and basic
+                  HTML and CSS for an appealing design. I used the Google API to
+                  retrieve upcoming calendar events for FSU Pickleball.
+                </p>
+                <div class="stack">
+                  <p>React</p>
+                  <p>Vite</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+                <div class="links">
+                  <a
+                    class="brand"
+                    target="_blank"
+                    href="https://github.com/Michaelc322/FSUPickleballWebapp"
+                    rel="noreferrer"
+                    >Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a
+                    class="free"
+                    target="_blank"
+                    href="https://fsupickleball.vercel.app/"
+                    rel="noreferrer"
+                    >Live Demo
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square link-icon"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <div class="proj proj1">
+              <div class="projText">
+                <h3>Mike's Market</h3>
+                <p>
+                  Utilized C# and .NET MAUI to create an application that
+                  simulates an inventory management system on the backend and a
+                  shopping cart system for the client. Users can create a wish
+                  list and checkout with items. Implemented the ability to
+                  create products, specify tax rate, markdowns or BOGO deals,
+                  and update stock.
+                </p>
+                <div class="stack">
+                  <p>C#</p>
+                  <p>.NET MAUI</p>
+                  <p>Visual Studio</p>
+                  <p>Xaml</p>
+                  <p>Filebase</p>
+                </div>
+
+                <div class="links">
+                  <a
+                    class="brand"
+                    target="_blank"
+                    href="https://github.com/Michaelc322/MikesMarket-Summer2024_Project-"
+                    rel="noreferrer"
+                    >Code
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a
+                    class="brand"
+                    target="_blank"
+                    href="https://youtu.be/x1c7ysH09dM"
+                    rel="noreferrer"
+                    >Demo
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="projImg">
+                <a
+                  target="_blank"
+                  href="https://github.com/Michaelc322/MikesMarket-Summer2024_Project-"
+                  rel="noreferrer"
+                >
+                  <img
+                    class="projImgMain"
+                    src="../../assets/mikesmarket.png"
+                    alt="website"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container-contact" id="contact">
+        <div class="contact-content">
+          <div class="contactText1">
+            <h3>CONTACT</h3>
+          </div>
+
+          <div class="contactIcons">
+            <div class="contactBox">
+              <span>
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <div class="contactInfo">
+                <h2>Email</h2>
+                <p>michaelc32204@gmail.com</p>
+                <p>mc22f@fsu.edu</p>
+              </div>
+            </div>
+            <div class="contactBox">
+              <span>
+                <i class="fa-solid fa-people-arrows"></i>
+              </span>
+              <div class="contactInfo">
+                <h2>Connect with me!</h2>
+                <a
+                  class="linkedinButton"
+                  aria-label="linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/michaelcarroll-dev/"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-        <div class="container-footer">
-            <div class="footer-content">
-                <h3>
-                    Copyright ©
-                    2023. All rights are reserved
-                </h3>
-                <div class="footersocials">
-                    <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/michael-carroll-b40020250/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+      <div class="container-footer">
+        <div class="footer-content">
+          <h3>Copyright © 2023. All rights are reserved</h3>
+          <div class="footersocials">
+            <a
+              aria-label="linkedin"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/michael-carroll-b40020250/"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
 
-                    <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/Michaelc322">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
+            <a
+              aria-label="github"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Michaelc322"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
-
