@@ -1,5 +1,9 @@
 html{scroll-behavior:smooth;
-overflow: hidden;}
+overflow-x: hidden;}
+
+body{
+    overflow-x: hidden;
+}
 
 * {
     box-sizing: border-box;
@@ -151,7 +155,232 @@ overflow: hidden;}
     width:100%;
 }
 
+.skillsSection{
+    background: linear-gradient(180deg, #252931 0%, #1f2229 100%);
+    padding: 8rem 0;
+}
 
+.container-skills{
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 0 4rem;
+}
+
+.contentSkills{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentSkills h3{
+    color: #ff6f6f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contentSkills h2{
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.skillsCategoryGrid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skillsCategoryCard{
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.22);
+    padding: 1.7rem;
+}
+
+.skillsCategoryEyebrow{
+    color: #ff8f8f;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.skillsPills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+}
+
+.experience{
+    background-color: #202329;
+    padding: 8rem 0;
+}
+.container-experience{
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 0 4rem;
+}
+
+.contentExperience{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentExperience h3{
+    color: #ff6f6f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.contentExperience h2{
+    color: white;
+    margin-bottom: 3.5rem;
+}
+
+.experienceGrid{
+    display: grid;
+    gap: 2rem;
+}
+
+.experienceCard{
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    color: white;
+    padding: 2rem;
+}
+
+.experienceTop{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.experienceCompany{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.experienceLogo{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 12px rgba(0,0,0,0.18);
+    display: flex;
+    height: 5.25rem;
+    justify-content: center;
+    min-width: 5.25rem;
+    padding: 0.9rem;
+}
+
+.experienceLogo img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.experienceLogo span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.experienceCard--reddit .experienceLogo{
+    height: 4.8rem;
+    min-width: 11.5rem;
+    padding: 0.85rem 1rem;
+}
+
+.experienceCard--diverse .experienceLogo{
+    background-color: #0b0f16;
+}
+
+.experienceLogo--fsu{
+    background: radial-gradient(circle at top, #8a1c42 0%, #651631 58%, #4a1124 100%);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.experienceTitle h3{
+    color: white;
+    font-size: 1.55rem;
+    margin-bottom: 0.3rem;
+    text-transform: none;
+}
+
+.experienceTitle p{
+    color: #dadada;
+    font-size: 1rem;
+}
+
+.experienceMeta{
+    display: grid;
+    gap: 0.35rem;
+    justify-items: end;
+    text-align: right;
+}
+
+.experienceMeta p,
+.experienceMeta span{
+    color: #dadada;
+    font-size: 0.95rem;
+}
+
+.experienceSkillLabel{
+    color: #ff8f8f;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.9rem;
+    text-transform: uppercase;
+}
+
+.experienceSkills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.experienceHighlights{
+    color: #e6e6e6;
+    display: grid;
+    gap: 0.9rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+}
+
+.experienceCard--placeholder{
+    border: 1px dashed rgba(255, 255, 255, 0.22);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.experienceCard--placeholder h3{
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+    text-transform: none;
+}
+
+.experienceCard--placeholder p:not(.experiencePlaceholderEyebrow){
+    color: #dadada;
+    line-height: 1.6;
+}
+
+.experiencePlaceholderEyebrow{
+    color: #ff8f8f;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
 
 .work{
     background-color: #212329;
@@ -201,18 +430,28 @@ overflow: hidden;}
     border-radius: 1.7rem;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
     display: flex;
+    /* align-items: stretch; */
 }
 
 .projectsGrid .projImg{
     background-color: hsla(0, 0%, 46%, 0.2);
     border-radius: 1.7rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    /* aspect-ratio: 1 / 1;
+    flex: 1 1 0; */
     height: auto;
     overflow: hidden;
     width:100%;
 }
 
+/* .projectsGrid .projImg a{
+    display: block;
+    height: 100%;
+    width: 100%;
+} */
+
 .projImg .projImgMain{
+    /* display: block; */
     width: 100%;
     height: 100%;
     object-position: top;
@@ -232,6 +471,7 @@ overflow: hidden;}
     text-align: center;
     width: 100%;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .projectsGrid .projText h3 {
@@ -245,6 +485,7 @@ overflow: hidden;}
     text-align: center;
     text-transform: none;
 }
+
 .stack {
 
     display: flex;
@@ -254,11 +495,45 @@ overflow: hidden;}
     max-width: 30rem;
 }
 
+.skillsPills span,
+.experienceSkills span,
 .stack p {
-    background-color: #2A2C33;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.05));
+    border: 1px solid rgba(255, 111, 111, 0.18);
+    border-radius: 999px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 10px 24px rgba(0,0,0,0.2);
     color: white;
-    padding: .5rem 1rem;
+    overflow: hidden;
+    padding: 0.55rem 1rem;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.skillsPills span::before,
+.experienceSkills span::before,
+.stack p::before{
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
+    content: "";
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-120%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skillsPills span:hover,
+.experienceSkills span:hover,
+.stack p:hover{
+    border-color: rgba(255, 111, 111, 0.36);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 28px rgba(0,0,0,0.28);
+    transform: translateY(-2px);
+}
+
+.skillsPills span:hover::before,
+.experienceSkills span:hover::before,
+.stack p:hover::before{
+    opacity: 1;
+    transform: translateX(120%);
 }
 
 .links{
@@ -270,7 +545,9 @@ overflow: hidden;}
 
 .links a{
     color: white;
+    display: flex;
     gap: 5px;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -530,10 +807,10 @@ overflow: hidden;}
 
 .nav-menu{
     display:grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     list-style: none;
     text-align: center;
-    width: 70%;
+    width: 82%;
     justify-self: end;
 }
 
@@ -789,6 +1066,19 @@ footer h3 {
         gap: 0rem;
     }
 
+    .skillsCategoryGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .experienceTop{
+        flex-direction: column;
+    }
+
+    .experienceMeta{
+        justify-items: start;
+        text-align: left;
+    }
+
     .contact{
         padding: 8rem 0;
 
@@ -916,6 +1206,12 @@ footer h3 {
         padding-left: 0;
     }
 
+    .container-skills,
+    .container-experience,
+    .container-work{
+        padding: 0 1.7rem;
+    }
+
     .shortAbout{
         width: 100%;
 
@@ -961,9 +1257,17 @@ footer h3 {
 
     .projectsGrid .proj {
         flex-direction: column;
-        height: 70rem;
-        width: fit-content
+        height: auto;
+        width: 100%;
+    }
 
+    .projectsGrid .proj1{
+        gap: 2rem;
+        min-height: auto;
+    }
+
+    .experienceCard{
+        padding: 1.5rem;
     }
 }
 
@@ -996,6 +1300,20 @@ footer h3 {
         width: 100%;
         font-size: 0.94rem;
     }
+
+    .experienceCompany{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .experienceCard--reddit .experienceLogo{
+        min-width: 100%;
+    }
+
+    .experienceTitle h3{
+        font-size: 1.3rem;
+    }
+
 }
 
 
